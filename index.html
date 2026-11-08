@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Abayneh Anjulo Abebe — CompTIA Security+ certified cybersecurity professional focused on SOC analysis, systems engineering, IT risk management, and data analytics.">
-  <title>Abayneh Anjulo Abebe | Cybersecurity & Technology</title>
+  <meta name="description" content="Abayneh Anjulo Abebe — CompTIA Security+ certified technology professional with experience in systems engineering, network security, IT risk management, data analytics, and software development.">
+  <meta name="theme-color" content="#091321">
+  <title>Abayneh Anjulo Abebe | Cybersecurity & Systems Engineering</title>
+
   <style>
     :root {
       --bg: #091321;
@@ -16,8 +18,15 @@
       --accent: #4ce0c4;
     }
 
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
+
     body {
       margin: 0;
       font-family: "Segoe UI", Arial, sans-serif;
@@ -25,9 +34,25 @@
       color: var(--text);
       line-height: 1.7;
     }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .container { width: min(1100px, 90%); margin: auto; }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: auto;
+    }
 
     header {
       position: sticky;
@@ -36,6 +61,7 @@
       border-bottom: 1px solid var(--border);
       z-index: 10;
     }
+
     nav {
       display: flex;
       justify-content: space-between;
@@ -44,54 +70,136 @@
       gap: 15px;
       padding: 18px 0;
     }
-    .logo { font-weight: 800; font-size: 1.1rem; }
-    .nav-links { display: flex; flex-wrap: wrap; gap: 18px; }
-    .nav-links a { color: var(--muted); font-size: .9rem; }
 
-    .hero { padding: 110px 0 90px; }
+    .logo {
+      font-weight: 800;
+      font-size: 1.1rem;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      padding: 110px 0 90px;
+    }
+
     .eyebrow {
       color: var(--accent);
       font-weight: 700;
       letter-spacing: 2px;
       text-transform: uppercase;
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
+
     h1 {
       font-size: clamp(2.5rem, 6vw, 4.5rem);
       line-height: 1.15;
       margin: 18px 0;
     }
-    h2 { font-size: 2rem; margin-bottom: 14px; }
-    h3 { margin-top: 0; }
-    p { color: var(--muted); }
-    .hero p { max-width: 740px; font-size: 1.12rem; }
 
-    .highlight { color: var(--accent); }
-    .buttons { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 30px; }
+    h2 {
+      font-size: 2rem;
+      line-height: 1.3;
+      margin-bottom: 14px;
+    }
+
+    h3 {
+      margin-top: 0;
+      line-height: 1.4;
+    }
+
+    p {
+      color: var(--muted);
+    }
+
+    .hero p {
+      max-width: 780px;
+      font-size: 1.12rem;
+    }
+
+    .highlight {
+      color: var(--accent);
+    }
+
+    .role-line {
+      color: var(--accent);
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
     .btn {
       display: inline-block;
       padding: 12px 22px;
       border-radius: 8px;
       font-weight: 700;
       border: 1px solid var(--accent);
+      transition: background 0.2s, color 0.2s;
     }
-    .btn-primary { background: var(--accent); color: #071521; }
-    .btn-outline { color: var(--accent); }
 
-    section { padding: 70px 0; }
-    .section-intro { max-width: 750px; margin-bottom: 28px; }
+    .btn-primary {
+      background: var(--accent);
+      color: #071521;
+    }
+
+    .btn-primary:hover {
+      background: #9cf5e5;
+      text-decoration: none;
+    }
+
+    .btn-outline {
+      color: var(--accent);
+    }
+
+    .btn-outline:hover {
+      background: #183c3d;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 70px 0;
+    }
+
+    .section-intro {
+      max-width: 800px;
+      margin-bottom: 28px;
+    }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
+
     .card {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 14px;
       padding: 26px;
     }
-    .card:hover { border-color: var(--accent); }
+
+    .card:hover {
+      border-color: var(--accent);
+    }
+
     .tag {
       display: inline-block;
       background: #183c3d;
@@ -99,35 +207,93 @@
       padding: 5px 11px;
       margin: 5px 5px 5px 0;
       border-radius: 20px;
-      font-size: .82rem;
+      font-size: 0.82rem;
     }
+
     .project-label {
       color: var(--accent);
-      font-size: .8rem;
+      font-size: 0.8rem;
       font-weight: 700;
       text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
+
+    .meta {
+      color: var(--accent);
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .detail-list {
+      padding-left: 22px;
+      color: var(--muted);
+    }
+
+    .detail-list li {
+      margin-bottom: 10px;
+    }
+
+    .education-card {
+      margin-bottom: 20px;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
     footer {
       padding: 35px 0;
       border-top: 1px solid var(--border);
       text-align: center;
     }
+
     @media (max-width: 600px) {
-      .hero { padding: 70px 0 45px; }
-      section { padding: 45px 0; }
-      .nav-links { gap: 12px; }
+      .hero {
+        padding: 70px 0 45px;
+      }
+
+      section {
+        padding: 45px 0;
+      }
+
+      .nav-links {
+        gap: 12px;
+      }
+
+      .nav-links a {
+        font-size: 0.85rem;
+      }
+
+      .card {
+        padding: 22px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  <nav class="container">
-    <a class="logo" href="#home">AAA<span class="highlight">.</span></a>
+  <nav class="container" aria-label="Main navigation">
+    <a class="logo" href="#home">
+      AAA<span class="highlight">.</span>
+    </a>
+
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#expertise">Expertise</a>
+      <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </div>
@@ -135,73 +301,229 @@
 </header>
 
 <main>
+
+  <!-- HERO SECTION -->
   <section class="hero container" id="home">
-    <div class="eyebrow">Cybersecurity • Systems • Data</div>
-    <h1>Abayneh Anjulo <span class="highlight">Abebe</span></h1>
-    <h2>Securing Systems.<br>Analyzing Data.<br>Building Solutions.</h2>
-    <p>
-      CompTIA Security+ certified technology professional with
-      hands-on experience in technical systems projects,
-      software development, and data analysis.
-      Focused on SOC analysis, security operations, network
-      security, and IT risk management.
+    <div class="eyebrow">
+      Cybersecurity • Systems Engineering • Data Analytics
+    </div>
+
+    <h1>
+      Abayneh Anjulo
+      <span class="highlight">Abebe</span>
+    </h1>
+
+    <p class="role-line">
+      Cybersecurity | Systems Engineering |
+      Network Security | IT Risk Management
     </p>
+
+    <h2>
+      Securing Systems.<br>
+      Analyzing Data.<br>
+      Building Solutions.
+    </h2>
+
+    <p>
+      CompTIA Security+ certified technology professional
+      with professional systems engineering experience and
+      a background in network infrastructure, security risk
+      assessment, data analysis, and software development.
+      Focused on cybersecurity, Security Operations Center
+      (SOC) analysis, threat detection, and secure systems.
+    </p>
+
     <div class="buttons">
-      <a class="btn btn-primary" href="#projects">Explore Projects</a>
-      <a class="btn btn-outline" href="#contact">Connect With Me</a>
+      <a class="btn btn-primary" href="#projects">
+        Explore Projects
+      </a>
+
+      <a class="btn btn-outline" href="#experience">
+        View Experience
+      </a>
+
+      <a class="btn btn-outline" href="#contact">
+        Connect With Me
+      </a>
     </div>
   </section>
 
+  <!-- ABOUT SECTION -->
   <section id="about" class="container">
     <div class="eyebrow">01 / About</div>
     <h2>About Me</h2>
+
     <p class="section-intro">
-      I am a CompTIA Security+ certified technology professional
-      interested in security monitoring, threat detection,
-      incident investigation, and the protection of information assets.
-      My technical background combines systems engineering projects,
-      cybersecurity labs, software development, and data analysis.
+      I am a CompTIA Security+ certified technology
+      professional with experience in systems engineering,
+      network infrastructure, technical troubleshooting,
+      and information security risk assessment.
+      My technical interests include SOC analysis,
+      network security, threat detection, incident
+      investigation, and IT risk management.
     </p>
+
     <p>
-      I am developing my career in cybersecurity and security
-      operations while applying analytical thinking and technical
-      problem-solving to real-world business systems.
+      I am currently pursuing a Master's degree in
+      Software Systems and Service Development Management
+      at Masaryk University in Brno, Czech Republic.
+      My academic foundation is in Electrical and Computer
+      Engineering, specializing in communication systems.
+    </p>
+
+    <p>
+      Alongside my engineering background, I develop
+      practical software and business systems and build
+      cybersecurity skills through hands-on security
+      tools and training environments. I bring an
+      analytical, detail-oriented approach to technical
+      challenges and continuous professional development.
     </p>
   </section>
 
+  <!-- EXPERTISE SECTION -->
   <section id="expertise" class="container">
     <div class="eyebrow">02 / Specializations</div>
     <h2>Areas of Expertise</h2>
+
     <div class="grid">
+
       <article class="card">
         <h3>Cybersecurity & SOC Analysis</h3>
-        <p>Security monitoring, log investigation, threat detection concepts, incident response workflows, and SIEM tools.</p>
+        <p>
+          Security monitoring, log analysis, threat
+          detection, incident investigation workflows,
+          and hands-on practice with SIEM platforms
+          and cybersecurity training environments.
+        </p>
       </article>
+
       <article class="card">
         <h3>Network & Systems Security</h3>
-        <p>TCP/IP, network traffic analysis, access controls, security configuration, and systems engineering.</p>
+        <p>
+          TCP/IP networking, traffic analysis,
+          telecommunications infrastructure,
+          network troubleshooting, systems integration,
+          and secure network operations.
+        </p>
       </article>
+
       <article class="card">
         <h3>IT Risk Management</h3>
-        <p>Security fundamentals, information protection, risk awareness, and confidentiality, integrity, and availability.</p>
+        <p>
+          IT security risk assessments, identification
+          of vulnerabilities, mitigation recommendations,
+          technical documentation, and information
+          protection principles.
+        </p>
       </article>
+
       <article class="card">
         <h3>Data & Business Analytics</h3>
-        <p>SQL, business reporting, operational data analysis, and structured problem-solving.</p>
+        <p>
+          SQL, Python, Power BI, Kibana, data
+          interpretation, operational reporting,
+          and analytical problem-solving.
+        </p>
       </article>
+
+      <article class="card">
+        <h3>Systems Engineering</h3>
+        <p>
+          Technical requirements analysis,
+          network implementation, system integration,
+          performance assessment, fault analysis,
+          and engineering documentation.
+        </p>
+      </article>
+
       <article class="card">
         <h3>Software Development</h3>
-        <p>JavaScript, Cloudflare Workers, SQL databases, GitHub, and web application development.</p>
+        <p>
+          JavaScript, Cloudflare Workers, SQL
+          databases, GitHub, and practical
+          web application development.
+        </p>
       </article>
+
     </div>
   </section>
 
+  <!-- PROFESSIONAL EXPERIENCE -->
+  <section id="experience" class="container">
+    <div class="eyebrow">03 / Professional Background</div>
+    <h2>Professional Experience</h2>
+
+    <p class="section-intro">
+      Practical engineering experience in communication
+      systems, network infrastructure, system integration,
+      and information security. Employer information
+      is omitted for professional confidentiality.
+    </p>
+
+    <article class="card">
+      <div class="project-label">
+        Systems Engineering & Network Security
+      </div>
+
+      <h3>Systems Engineer</h3>
+
+      <p class="meta">
+        August 2022 – September 2024
+      </p>
+
+      <p>
+        Supported telecommunications and IP-based
+        network environments, technical system
+        integration, infrastructure troubleshooting,
+        and security risk assessment activities.
+      </p>
+
+      <ul class="detail-list">
+        <li>
+          Supported network architecture design,
+          implementation, and operational maintenance.
+        </li>
+
+        <li>
+          Integrated and tested routers, switches,
+          gateways, and communication systems.
+        </li>
+
+        <li>
+          Performed network troubleshooting,
+          system performance analysis,
+          and technical fault investigation.
+        </li>
+
+        <li>
+          Conducted IT security risk assessments,
+          identified vulnerabilities, and recommended
+          appropriate mitigation measures.
+        </li>
+
+        <li>
+          Supported technical requirements analysis,
+          systems integration, and project documentation.
+        </li>
+
+        <li>
+          Collaborated with engineering teams and
+          prepared technical reports and documentation.
+        </li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- SKILLS SECTION -->
   <section id="skills" class="container">
-    <div class="eyebrow">03 / Technical Toolkit</div>
-    <h2>Skills & Certification</h2>
+    <div class="eyebrow">04 / Technical Toolkit</div>
+    <h2>Technical Skills & Certifications</h2>
+
     <div class="grid">
+
       <div class="card">
-        <h3>Security Tools</h3>
+        <h3>Security & SOC Tools</h3>
         <span class="tag">Splunk</span>
         <span class="tag">Microsoft Sentinel</span>
         <span class="tag">Wireshark</span>
@@ -209,83 +531,270 @@
         <span class="tag">Kali Linux</span>
         <span class="tag">Nmap</span>
       </div>
+
       <div class="card">
-        <h3>Technical Skills</h3>
+        <h3>Networking & Systems</h3>
+        <span class="tag">TCP/IP</span>
+        <span class="tag">Cisco Networking</span>
+        <span class="tag">Linux</span>
+        <span class="tag">DNS</span>
+        <span class="tag">DHCP</span>
+        <span class="tag">VoIP</span>
+        <span class="tag">Network Troubleshooting</span>
+      </div>
+
+      <div class="card">
+        <h3>Data Analysis & Reporting</h3>
+        <span class="tag">Python</span>
         <span class="tag">SQL</span>
+        <span class="tag">Power BI</span>
+        <span class="tag">Kibana</span>
+        <span class="tag">Elasticsearch</span>
+        <span class="tag">Logstash</span>
+      </div>
+
+      <div class="card">
+        <h3>Software & Cloud Technologies</h3>
         <span class="tag">JavaScript</span>
         <span class="tag">Cloudflare Workers</span>
         <span class="tag">Cloudflare D1</span>
         <span class="tag">GitHub</span>
-        <span class="tag">Network Analysis</span>
+        <span class="tag">Web Development</span>
+        <span class="tag">Bash/Shell</span>
       </div>
+
       <div class="card">
-        <h3>Certification & Labs</h3>
-        <p><strong class="highlight">CompTIA Security+ Certified</strong></p>
-        <p>Hands-on cybersecurity practice using TryHackMe and Hack The Box.</p>
+        <h3>Certifications & Training</h3>
+
+        <p>
+          <strong class="highlight">
+            CompTIA Security+ Certified
+          </strong>
+        </p>
+
+        <p>
+          Cisco Networking Academy training
+          in networking and routing fundamentals.
+        </p>
+
+        <p>
+          Hands-on cybersecurity practice using
+          TryHackMe and Hack The Box.
+        </p>
       </div>
+
     </div>
   </section>
 
-  <section id="projects" class="container">
-    <div class="eyebrow">04 / Selected Work</div>
-    <h2>Featured Projects</h2>
+  <!-- EDUCATION SECTION -->
+  <section id="education" class="container">
+    <div class="eyebrow">05 / Academic Background</div>
+    <h2>Education</h2>
+
     <div class="grid">
-      <article class="card">
-        <div class="project-label">Software & Business Systems</div>
-        <h3>MiMI Restaurant Management System</h3>
-        <p>
-          A restaurant business management application supporting
-          sales, expenses, inventory, purchasing, and operational
-          reporting, built using Cloudflare Workers and D1.
+
+      <article class="card education-card">
+        <div class="project-label">
+          Master's Degree — In Progress
+        </div>
+
+        <h3>
+          Software Systems and Service
+          Development Management
+        </h3>
+
+        <p class="meta">
+          Masaryk University
         </p>
-        <p>Private application. Source code and business records are not publicly available.</p>
-      </article>
-      <article class="card">
-        <div class="project-label">Cybersecurity Lab</div>
-        <h3>Wireshark Network Traffic Analysis</h3>
+
         <p>
-          An ongoing practical investigation into network protocols,
-          traffic patterns, and security-relevant observations using
-          Wireshark.
+          Brno, Czech Republic
         </p>
-        <p>Project documentation in progress.</p>
-      </article>
-      <article class="card">
-        <div class="project-label">Security Operations</div>
-        <h3>SOC Investigation Labs</h3>
+
         <p>
-          Hands-on experience with security monitoring tools and
-          cybersecurity training environments, including Splunk,
-          Microsoft Sentinel, TryHackMe, and Hack The Box.
+          2024 – Present
         </p>
-        <p>Detailed case studies to be added.</p>
       </article>
+
+      <article class="card education-card">
+        <div class="project-label">
+          Bachelor of Science — Completed
+        </div>
+
+        <h3>
+          Electrical and Computer Engineering
+        </h3>
+
+        <p class="meta">
+          Jimma University
+        </p>
+
+        <p>
+          Ethiopia | 2011 – 2016
+        </p>
+
+        <p>
+          Specialization: Communication Engineering
+        </p>
+      </article>
+
     </div>
   </section>
 
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="container">
+    <div class="eyebrow">06 / Selected Work</div>
+    <h2>Featured Projects</h2>
+
+    <p class="section-intro">
+      A selection of software development and
+      cybersecurity projects demonstrating practical
+      technical skills, analytical thinking,
+      and continuous learning.
+    </p>
+
+    <div class="grid">
+
+      <article class="card">
+        <div class="project-label">
+          Software & Business Systems
+        </div>
+
+        <h3>MiMI Restaurant Management System</h3>
+
+        <p>
+          Developed a restaurant business management
+          application supporting sales, expenses,
+          inventory, purchasing, and operational
+          reporting using Cloudflare Workers
+          and Cloudflare D1.
+        </p>
+
+        <p>
+          Applied database design, application logic,
+          access controls, and business reporting
+          concepts to a practical system.
+        </p>
+
+        <p>
+          Private application. Source code,
+          administrative interfaces, and business
+          records are not publicly available.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="project-label">
+          Cybersecurity Lab — In Progress
+        </div>
+
+        <h3>Wireshark Network Traffic Analysis</h3>
+
+        <p>
+          Ongoing practical investigation of
+          network protocols, traffic patterns,
+          and security-relevant observations
+          using Wireshark.
+        </p>
+
+        <p>
+          Project documentation and analysis
+          are in progress.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="project-label">
+          Security Operations — Lab Practice
+        </div>
+
+        <h3>SOC Investigation Labs</h3>
+
+        <p>
+          Practical cybersecurity training
+          involving security monitoring tools,
+          investigation concepts, and
+          simulated security environments.
+        </p>
+
+        <p>
+          Tools and platforms include Splunk,
+          Microsoft Sentinel, TryHackMe,
+          and Hack The Box.
+        </p>
+
+        <p>
+          Detailed case studies will be added
+          as they are completed.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
   <section id="contact" class="container">
-    <div class="eyebrow">05 / Contact</div>
+    <div class="eyebrow">07 / Contact</div>
     <h2>Let's Connect</h2>
-    <p>
-      Interested in opportunities involving cybersecurity,
-      security operations, systems engineering, IT risk management,
+
+    <p class="section-intro">
+      I am interested in professional opportunities
+      in cybersecurity, SOC analysis, network security,
+      systems engineering, IT risk management,
       data analytics, and software development.
     </p>
-    <div class="buttons">
+
+    <p>
+      Connect with me through LinkedIn,
+      explore my work on GitHub,
+      or contact me by email.
+    </p>
+
+    <div class="contact-links">
+
       <a class="btn btn-primary"
-         href="https://github.com/abaynehanjulo"
-         target="_blank" rel="noopener noreferrer">
-        View GitHub Profile
+         href="https://www.linkedin.com/in/abayneh-anjulo-361803181/"
+         target="_blank"
+         rel="noopener noreferrer">
+        LinkedIn Profile
       </a>
+
+      <a class="btn btn-outline"
+         href="https://github.com/abaynehanjulo"
+         target="_blank"
+         rel="noopener noreferrer">
+        GitHub Profile
+      </a>
+
+      <a class="btn btn-outline"
+         href="mailto:abaynehanjulo12@gmail.com">
+        Email Me
+      </a>
+
     </div>
-    <p>Additional professional contact links will be added after review.</p>
+
+    <p>
+      Email:
+      <a href="mailto:abaynehanjulo12@gmail.com">
+        abaynehanjulo12@gmail.com
+      </a>
+    </p>
+
   </section>
+
 </main>
 
 <footer>
   <div class="container">
-    <p>© 2026 Abayneh Anjulo Abebe. All rights reserved.</p>
-    <p>Cybersecurity • Systems Engineering • Data Analytics</p>
+    <p>
+      © 2026 Abayneh Anjulo Abebe.
+      All rights reserved.
+    </p>
+
+    <p>
+      Cybersecurity • Systems Engineering •
+      Network Security • Data Analytics
+    </p>
   </div>
 </footer>
 
