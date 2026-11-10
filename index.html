@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Abayneh Anjulo Abebe — CompTIA Security+ certified technology professional with experience in systems engineering, network security, IT risk management, data analytics, and software development.">
+  <meta name="description" content="Abayneh Anjulo Abebe — Cybersecurity, Systems Engineering, Network Security, IT Risk Management, and Data Analytics.">
   <meta name="theme-color" content="#091321">
   <title>Abayneh Anjulo Abebe | Cybersecurity & Systems Engineering</title>
 
@@ -79,7 +79,7 @@
     .nav-links {
       display: flex;
       flex-wrap: wrap;
-      gap: 18px;
+      gap: 16px;
     }
 
     .nav-links a {
@@ -148,11 +148,12 @@
 
     .btn {
       display: inline-block;
-      padding: 12px 22px;
+      padding: 12px 20px;
       border-radius: 8px;
       font-weight: 700;
       border: 1px solid var(--accent);
       transition: background 0.2s, color 0.2s;
+      text-align: center;
     }
 
     .btn-primary {
@@ -185,7 +186,7 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
       gap: 20px;
     }
 
@@ -234,7 +235,42 @@
     }
 
     .education-card {
-      margin-bottom: 20px;
+      margin-bottom: 0;
+    }
+
+    /* Equal project cards */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .projects-grid .card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .projects-grid .project-label {
+      min-height: 2.6em;
+    }
+
+    .projects-grid h3 {
+      margin-top: 12px;
+    }
+
+    .project-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin-top: auto;
+      padding-top: 20px;
+    }
+
+    .project-actions .btn {
+      font-size: 0.9rem;
     }
 
     .contact-links {
@@ -250,7 +286,7 @@
       text-align: center;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 650px) {
       .hero {
         padding: 70px 0 45px;
       }
@@ -269,6 +305,10 @@
 
       .card {
         padding: 22px;
+      }
+
+      .projects-grid {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -292,10 +332,11 @@
       <a href="#about">About</a>
       <a href="#expertise">Expertise</a>
       <a href="#experience">Experience</a>
+      <a href="#certifications">Certifications</a>
       <a href="#skills">Skills</a>
       <a href="#education">Education</a>
       <a href="#projects">Projects</a>
-      <a href="#certifications">Certifications</a>
+      <a href="#career">Career</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
@@ -303,7 +344,7 @@
 
 <main>
 
-  <!-- HERO SECTION -->
+  <!-- HERO -->
   <section class="hero container" id="home">
     <div class="eyebrow">
       Cybersecurity • Systems Engineering • Data Analytics
@@ -338,18 +379,16 @@
       <a class="btn btn-primary" href="#projects">
         Explore Projects
       </a>
-
       <a class="btn btn-outline" href="#experience">
         View Experience
       </a>
-
       <a class="btn btn-outline" href="#contact">
         Connect With Me
       </a>
     </div>
   </section>
 
-  <!-- ABOUT SECTION -->
+  <!-- ABOUT -->
   <section id="about" class="container">
     <div class="eyebrow">01 / About</div>
     <h2>About Me</h2>
@@ -382,7 +421,7 @@
     </p>
   </section>
 
-  <!-- EXPERTISE SECTION -->
+  <!-- EXPERTISE -->
   <section id="expertise" class="container">
     <div class="eyebrow">02 / Specializations</div>
     <h2>Areas of Expertise</h2>
@@ -450,7 +489,7 @@
     </div>
   </section>
 
-  <!-- PROFESSIONAL EXPERIENCE -->
+  <!-- EXPERIENCE -->
   <section id="experience" class="container">
     <div class="eyebrow">03 / Professional Background</div>
     <h2>Professional Experience</h2>
@@ -469,15 +508,13 @@
 
       <h3>Systems Engineer</h3>
 
-      <p class="meta">
-        August 2022 – September 2024
-      </p>
+      <p class="meta">August 2022 – September 2024</p>
 
       <p>
-        Supported telecommunications and IP-based
-        network environments, technical system
-        integration, infrastructure troubleshooting,
-        and security risk assessment activities.
+        Supported telecommunications and IP-based network
+        environments, technical system integration,
+        infrastructure troubleshooting, and security
+        risk assessment activities.
       </p>
 
       <ul class="detail-list">
@@ -485,29 +522,24 @@
           Supported network architecture design,
           implementation, and operational maintenance.
         </li>
-
         <li>
           Integrated and tested routers, switches,
           gateways, and communication systems.
         </li>
-
         <li>
-          Performed network troubleshooting,
-          system performance analysis,
-          and technical fault investigation.
+          Performed network troubleshooting, system
+          performance analysis, and technical fault
+          investigation.
         </li>
-
         <li>
           Conducted IT security risk assessments,
           identified vulnerabilities, and recommended
           appropriate mitigation measures.
         </li>
-
         <li>
           Supported technical requirements analysis,
           systems integration, and project documentation.
         </li>
-
         <li>
           Collaborated with engineering teams and
           prepared technical reports and documentation.
@@ -515,13 +547,14 @@
       </ul>
     </article>
   </section>
-  
-    <!-- CERTIFICATIONS SECTION -->
-<section id="certifications" class="container">
-  <div class="eyebrow">04 / Credentials</div>
-  <h2>Certifications & Professional Training</h2>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="container">
+    <div class="eyebrow">04 / Credentials</div>
+    <h2>Certifications & Professional Training</h2>
 
     <div class="grid">
+
       <article class="card">
         <h3>Cybersecurity & Networking</h3>
         <ul class="detail-list">
@@ -548,11 +581,17 @@
           <li>Project Management — Certificate</li>
         </ul>
       </article>
+
     </div>
-</section> 
-  <h2>Professional & Interpersonal Skills</h2>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="container">
+    <div class="eyebrow">05 / Personal Strengths</div>
+    <h2>Professional & Interpersonal Skills</h2>
 
     <div class="grid">
+
       <article class="card">
         <h3>Communication & Collaboration</h3>
         <span class="tag">Clear Communication</span>
@@ -568,11 +607,13 @@
         <span class="tag">Problem-Solving</span>
         <span class="tag">Adaptability</span>
       </article>
-    </div>
 
-  <!-- EDUCATION SECTION -->
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
   <section id="education" class="container">
-    <div class="eyebrow">05 / Academic Background</div>
+    <div class="eyebrow">06 / Academic Background</div>
     <h2>Education</h2>
 
     <div class="grid">
@@ -581,87 +622,55 @@
         <div class="project-label">
           Master's Degree — In Progress
         </div>
-
         <h3>
-          Software Systems and Service
-          Development Management
+          Software Systems and Service Development Management
         </h3>
-
-        <p class="meta">
-          Masaryk University
-        </p>
-
-        <p>
-          Brno, Czech Republic
-        </p>
-
-        <p>
-          2024 – Present
-        </p>
+        <p class="meta">Masaryk University</p>
+        <p>Brno, Czech Republic</p>
+        <p>2024 – Present</p>
       </article>
 
       <article class="card education-card">
         <div class="project-label">
           Bachelor of Science — Completed
         </div>
-
-        <h3>
-          Electrical and Computer Engineering
-        </h3>
-
-        <p class="meta">
-          Jimma University
-        </p>
-
-        <p>
-          Ethiopia | 2011 – 2016
-        </p>
-
-        <p>
-          Specialization: Communication Engineering
-        </p>
+        <h3>Electrical and Computer Engineering</h3>
+        <p class="meta">Jimma University</p>
+        <p>Ethiopia | 2011 – 2016</p>
+        <p>Specialization: Communication Engineering</p>
       </article>
 
-<article class="card education-card">
-  <div class="project-label">
-    Postgraduate Studies — Not Completed
-  </div>
-
-  <h3>
-    Cyber Security Management and Governance
-  </h3>
-
-  <p class="meta">
-    Addis Ababa University
-  </p>
-
-  <p>
-    Ethiopia | 2023–2024
-  </p>
-
-  <p>
-    Master's-level studies discontinued
-    before degree completion.
-  </p>
-</article>
+      <article class="card education-card">
+        <div class="project-label">
+          Postgraduate Studies — Not Completed
+        </div>
+        <h3>Cyber Security Management and Governance</h3>
+        <p class="meta">Addis Ababa University</p>
+        <p>Ethiopia | 2023–2024</p>
+        <p>
+          Master's-level studies discontinued
+          before degree completion.
+        </p>
+      </article>
 
     </div>
   </section>
 
-  <!-- PROJECTS SECTION -->
+  <!-- FEATURED PROJECTS -->
   <section id="projects" class="container">
-    <div class="eyebrow">06 / Selected Work</div>
+    <div class="eyebrow">07 / Selected Work</div>
     <h2>Featured Projects</h2>
 
     <p class="section-intro">
-      A selection of software development and
-      cybersecurity projects demonstrating practical
+      A selection of software development, data analytics,
+      and cybersecurity projects demonstrating practical
       technical skills, analytical thinking,
       and continuous learning.
     </p>
 
-    <div class="grid">
+    <div class="projects-grid">
 
+      <!-- PROJECT 1 -->
       <article class="card">
         <div class="project-label">
           Software & Business Systems
@@ -683,38 +692,39 @@
           concepts to a practical system.
         </p>
 
-        
-        <p>
-         <a class="btn btn-primary"
-          href="https://mimi.mimirestaurant.workers.dev/"
-          target="_blank"
-          rel="noopener noreferrer">
-         Visit Live Website
-        </a>
-      </p>
-
+        <div class="project-actions">
+          <a class="btn btn-primary"
+             href="https://mimi.mimirestaurant.workers.dev/"
+             target="_blank"
+             rel="noopener noreferrer">
+            Visit Live Website
+          </a>
+        </div>
       </article>
-      
-<article class="card">
-  <div class="project-label">
-    Cybersecurity Project — Completed
-  </div>
 
-  <h3>Wireshark Network Traffic Analysis</h3>
+      <!-- PROJECT 2 -->
+      <article class="card">
+        <div class="project-label">
+          Cybersecurity Project — Completed
+        </div>
 
-  <p>
-    Completed a practical network traffic analysis
-    project using Wireshark to examine network
-    protocols, traffic patterns, and
-    security-relevant observations.
-  </p>
+        <h3>Wireshark Network Traffic Analysis</h3>
 
-  <p>
-    <strong>Tools:</strong> Wireshark
-  </p>
-</article>
+        <p>
+          Completed a practical network traffic
+          analysis project using Wireshark to examine
+          network protocols, traffic patterns,
+          and security-relevant observations.
+        </p>
 
+        <p><strong>Tools:</strong> Wireshark</p>
 
+        <div class="project-actions">
+          <span class="tag">Completed Project</span>
+        </div>
+      </article>
+
+      <!-- PROJECT 3 -->
       <article class="card">
         <div class="project-label">
           Security Operations — Lab Practice
@@ -723,10 +733,9 @@
         <h3>SOC Investigation Labs</h3>
 
         <p>
-          Practical cybersecurity training
-          involving security monitoring tools,
-          investigation concepts, and
-          simulated security environments.
+          Practical cybersecurity training involving
+          security monitoring tools, investigation
+          concepts, and simulated security environments.
         </p>
 
         <p>
@@ -739,32 +748,112 @@
           Detailed case studies will be added
           as they are completed.
         </p>
+
+        <div class="project-actions">
+          <span class="tag">Lab Practice</span>
+        </div>
+      </article>
+
+      <!-- PROJECT 4 -->
+      <article class="card">
+        <div class="project-label">
+          Data Analytics — Educational Project
+        </div>
+
+        <h3>AI Healthcare Disease Trend Analysis</h3>
+
+        <p>
+          Educational healthcare analytics dashboard
+          using synthetic data, Python, Pandas,
+          PostgreSQL, Streamlit, and scikit-learn.
+        </p>
+
+        <p>
+          Explores interactive data visualization,
+          regional disease trends, and early-warning
+          concepts. Not intended for clinical decisions.
+        </p>
+
+        <div class="project-actions">
+          <a class="btn btn-primary"
+             href="https://healthdisease-analytics.streamlit.app/"
+             target="_blank"
+             rel="noopener noreferrer">
+            View Live Dashboard
+          </a>
+
+          <a class="btn btn-outline"
+             href="https://github.com/abaynehanjulo/healthdisease-analytics"
+             target="_blank"
+             rel="noopener noreferrer">
+            GitHub Repository
+          </a>
+        </div>
       </article>
 
     </div>
-  <section class="project">
-  <h3>AI Healthcare Disease Trend Analysis</h3>
-  <p>
-    Educational healthcare analytics dashboard
-    using synthetic data, Python, Pandas,
-    PostgreSQL, Streamlit and scikit-learn.
-  </p>
-
-  <a href="https://healthdisease-analytics.streamlit.app/"
-     target="_blank" rel="noopener noreferrer">
-    View Live Dashboard
-  </a>
-
-  <a href="https://github.com/abaynehanjulo/healthdisease-analytics"
-     target="_blank" rel="noopener noreferrer">
-    GitHub Repository
-  </a>
-</section>
   </section>
 
-  <!-- CONTACT SECTION -->
+  <!-- CAREER GOALS -->
+  <section id="career" class="container">
+    <div class="eyebrow">08 / Career Goals</div>
+    <h2>Career Motivation & Mobility</h2>
+
+    <div class="grid">
+
+      <article class="card">
+        <h3>Professional Motivation</h3>
+
+        <p>
+          I am a highly motivated and adaptable
+          technology professional committed to
+          continuous learning, professional development,
+          and meaningful contributions to challenging
+          technical projects.
+        </p>
+
+        <p>
+          I am eager to grow in cybersecurity, SOC analysis,
+          network security, systems engineering,
+          IT risk management, data analytics,
+          and software development.
+        </p>
+
+        <p>
+          I bring analytical thinking, clear communication,
+          active listening, independent working abilities,
+          and a collaborative approach to problem-solving.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Work Authorization & Relocation</h3>
+
+        <p>
+          I currently hold work authorization
+          in the Czech Republic and Ethiopia.
+        </p>
+
+        <p>
+          I am open to professional opportunities
+          internationally and willing to relocate
+          for suitable positions, subject to applicable
+          immigration and employment requirements.
+        </p>
+
+        <p>
+          I welcome opportunities to work with diverse
+          international teams and contribute to secure,
+          reliable, and innovative technology solutions.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
   <section id="contact" class="container">
-    <div class="eyebrow">07 / Contact</div>
+    <div class="eyebrow">09 / Contact</div>
     <h2>Let's Connect</h2>
 
     <p class="section-intro">
@@ -774,64 +863,6 @@
       data analytics, and software development.
     </p>
 
-    
-<!-- CAREER MOTIVATION SECTION -->
-<section id="career" class="container">
-  <div class="eyebrow">07 / Career Goals</div>
-
-  <h2>Career Motivation & Mobility</h2>
-
-  <div class="grid">
-    <article class="card">
-      <h3>Professional Motivation</h3>
-
-      <p>
-        I am a highly motivated and adaptable technology
-        professional committed to continuous learning,
-        professional development, and meaningful
-        contributions to challenging technical projects.
-      </p>
-
-      <p>
-        I am eager to grow in cybersecurity, SOC analysis,
-        network security, systems engineering, IT risk
-        management, data analytics, and software development.
-      </p>
-
-      <p>
-        I bring analytical thinking, clear communication,
-        active listening, independent working abilities,
-        and a collaborative approach to problem-solving.
-      </p>
-    </article>
-
-    <article class="card">
-      <h3>Work Authorization & Relocation</h3>
-
-      <p>
-        I currently hold work authorization in
-        the Czech Republic and Ethiopia.
-      </p>
-
-      <p>
-        I am open to professional opportunities
-        internationally and willing to relocate
-        for suitable positions, subject to
-        applicable immigration and employment
-        requirements.
-      </p>
-
-      <p>
-        I welcome opportunities to work with
-        diverse international teams and contribute
-        to secure, reliable, and innovative
-        technology solutions.
-      </p>
-    </article>
-  </div>
-</section>
-
-
     <p>
       Connect with me through LinkedIn,
       explore my work on GitHub,
@@ -839,7 +870,6 @@
     </p>
 
     <div class="contact-links">
-
       <a class="btn btn-primary"
          href="https://www.linkedin.com/in/abayneh-anjulo-361803181/"
          target="_blank"
@@ -858,7 +888,6 @@
          href="mailto:abaynehanjulo12@gmail.com">
         Email Me
       </a>
-
     </div>
 
     <p>
@@ -867,15 +896,13 @@
         abaynehanjulo12@gmail.com
       </a>
     </p>
-    
-<p>
-  <strong>Phone:</strong>
-  <a href="tel:+420776712889">
-    +420 776 712 889
-  </a>
-</p>
 
-
+    <p>
+      <strong>Phone:</strong>
+      <a href="tel:+420776712889">
+        +420 776 712 889
+      </a>
+    </p>
   </section>
 
 </main>
